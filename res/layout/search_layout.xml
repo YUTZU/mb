@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompleteTextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="90px"
+        android:hint="please enter address / client name" >
+    </AutoCompleteTextView>
+ 
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nearButton"
+        class="com.google.android.gms.maps.MapFragment" />
+ 
+    <Button
+        android:id="@+id/nearButton"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/AutoCompleteTextView1"
+        android:background="#99cccc"
+        android:text="near"
+        android:textColor="#ffffff" />
+ 
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="70dp"
+        android:layout_height="90px"
+        android:layout_alignBaseline="@+id/nearButton"
+        android:layout_alignBottom="@+id/nearButton"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/nearButton"
+        android:background="#ffffff"
+        android:onClick="onLoactionNameClick"
+        android:text="search"
+        android:textColor="#99cccc" />
+ 
+</RelativeLayout>

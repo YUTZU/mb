@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+ 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+ 
+            <ImageButton
+                android:id="@+id/imbtnsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+               />
+ 
+            <ImageButton
+                android:id="@+id/imbtndel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+ 
+        </LinearLayout>
+ 
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+ 
+        <TextView
+            android:id="@+id/txtaddname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Name :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10" >
+ 
+            <requestFocus />
+        </EditText>
+ 
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddatg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Tag :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <Spinner
+            android:id="@+id/sptag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3" />
+ 
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddbirthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Birthday :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edtbirthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10"/>
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddtel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Tel :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edttel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10"
+            android:inputType="phone" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="E-mail :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddaddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Address :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edtaddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10"/>
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+        <TextView
+            android:id="@+id/txtaddnote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Note :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <EditText
+            android:id="@+id/edtnote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10" />
+    </LinearLayout>
+ 
+</LinearLayout>

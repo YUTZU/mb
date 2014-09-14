@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_notice"
+          android:icon="@drawable/notice"
+          android:title="@string/action_notice"
+          android:showAsAction="ifRoom|withText" />
+</menu>
